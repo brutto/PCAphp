@@ -1,4 +1,6 @@
-<?php namespace PCA\Math;
+<?php
+
+namespace PCA\Math;
 
 /**
  * PCA\Math\jacobiEigenvalueAlgorithm
@@ -14,7 +16,7 @@
  *                         array(-35, 420,-1050,  700));
  *
  */
-class jacobiEigenvalueAlgorithm
+class JacobiEigenvalueAlgorithm
 {
     /**
      * @var array matrix
@@ -60,7 +62,7 @@ class jacobiEigenvalueAlgorithm
     protected $iter;
 
     /**
-     * jacobiEigenvalueAlgorithm constructor.
+     * JacobiEigenvalueAlgorithm constructor.
      * @param array $_S
      * @param null $_n
      */

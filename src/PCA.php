@@ -1,6 +1,8 @@
-<?php namespace PCA;
+<?php
 
-include( "Math/jacobiEigenvalueAlgorithm.php" );
+namespace PCA;
+
+use PCA\Math\JacobiEigenvalueAlgorithm;
 
 /**
  * Class for calculate Principal Component Analysis
@@ -92,7 +94,7 @@ class PCA
         $this->makeA_();
         $this->makeCov();
 
-        $eig = new Math\jacobiEigenvalueAlgorithm($this->C, $this->m);
+        $eig = new JacobiEigenvalueAlgorithm($this->C, $this->m);
         list($this->Z_, $this->L) = $eig->eigSort();
     }
 

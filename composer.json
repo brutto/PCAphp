@@ -1,12 +1,19 @@
 {
-    "name": "brutto/pca",
-    "description": "PCA calculator",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Anton Karakulov",
-            "email": "i.am.brutto@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "brutto/pca",
+  "description": "PCA calculator",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Anton Karakulov",
+      "email": "i.am.brutto@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "PCA\\": [
+        "src"
+      ]
+    }
+  }
 }
